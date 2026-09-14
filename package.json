@@ -1,0 +1,11 @@
+{
+  "name": "sippers-legal",
+  "private": true,
+  "packageManager": "npm@10.9.4",
+  "engines": {
+    "node": ">=20 <23"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  }
+}
