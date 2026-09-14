@@ -20,7 +20,7 @@
     <main class="legal-main">
       <article>
         <h1>Privacy Policy</h1>
-        <p>Last updated: September 12, 2026</p>
+        <p>Last updated: September 14, 2026</p>
 
         <p>
           This Privacy Policy describes how Sippers ("we," "us," or "our")
@@ -124,6 +124,17 @@
         <p>
           You can enable or disable these permissions at any time in your device
           settings.
+        </p>
+
+        <h3>Bot and Abuse Protection</h3>
+        <p>
+          When you request an email sign-in code, Cloudflare Turnstile may
+          evaluate your IP address, browser or device characteristics, and
+          interaction and security signals to help distinguish people from
+          automated traffic. Sippers sends the short-lived challenge token to
+          Supabase to authorize the email-code request. We do not send your
+          email address, beverage history, photos, or other form entries to
+          Turnstile, and Sippers does not retain the challenge token.
         </p>
 
         <h3>Purchase Location Tags (Optional)</h3>
@@ -250,7 +261,10 @@
           </li>
           <li>
             <strong>Cloudflare</strong> &mdash; hosts current user-uploaded
-            avatars, review photos, and sip photos in R2 object storage.
+            avatars, review photos, and sip photos in R2 object storage and
+            provides Turnstile bot and abuse protection for email
+            authentication. Turnstile may process the security signals
+            described above and provide challenge analytics to Sippers.
             <a
               href="https://www.cloudflare.com/privacypolicy/"
               target="_blank"
@@ -408,6 +422,11 @@
           retention terms, usage-policy enforcement, and legal requirements.
           Sippers may separately retain the extracted product information as
           described above.
+        </p>
+        <p>
+          Sippers does not retain Cloudflare Turnstile challenge tokens.
+          Cloudflare may retain security and challenge records under its
+          applicable service terms and privacy documentation.
         </p>
         <p>
           Reviews that have been reported and are subject to ongoing moderation

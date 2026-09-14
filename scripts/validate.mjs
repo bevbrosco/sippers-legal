@@ -56,6 +56,8 @@ assert.doesNotMatch(combined, /minimum age requirement \(17\+\)/i);
 assert.match(privacy, /minimum age requirement \(18\+\)/i);
 assert.match(privacy, /Anthropic/i);
 assert.match(privacy, /Cloudflare/i);
+assert.match(privacy, /Cloudflare Turnstile/i);
+assert.match(privacy, /does not retain the challenge token/i);
 assert.match(privacy, /Settings &rarr; Export My Data/i);
 assert.match(privacy, /Settings &rarr; Delete Account/i);
 assert.match(support, /Do not email a password, one-time code, government/i);
